@@ -1,10 +1,10 @@
 'use strict';
-
-angular.module('jscrollpaneTestsApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Testacular'
-    ];
-  });
+//###################Creating the controllers object to hold all the controlles###################
+var controllers    = {};
+//####################################################
+//###################START MainCtrl###################
+controllers.MainCtrl = function($scope) {
+  $('.scroll-pane').jScrollPane();
+};
+//###################END MainCtrl#####################
+//####################################################
